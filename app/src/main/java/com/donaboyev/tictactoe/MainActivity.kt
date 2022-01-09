@@ -1,5 +1,6 @@
 package com.donaboyev.tictactoe
 
+import android.annotation.SuppressLint
 import android.content.SharedPreferences
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
@@ -88,6 +89,7 @@ class MainActivity : AppCompatActivity(), BottomSheetFragment.ItemClickListener 
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun loadBoard() {
         gameBoard = GameBoard()
         for (i in buttons.indices) {
@@ -136,6 +138,7 @@ class MainActivity : AppCompatActivity(), BottomSheetFragment.ItemClickListener 
         mapBoardToUi()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun resetGame() {
         countCPU = 0
         countYou = 0
@@ -167,6 +170,7 @@ class MainActivity : AppCompatActivity(), BottomSheetFragment.ItemClickListener 
     internal inner class CellClickListenerInTwoPlayers(
         private val i: Int, private val j: Int
     ) : View.OnClickListener {
+        @SuppressLint("SetTextI18n")
         override fun onClick(v: View?) {
             if (!gameBoard!!.isGameOver) {
                 val cell = Cell(i, j)
@@ -201,6 +205,7 @@ class MainActivity : AppCompatActivity(), BottomSheetFragment.ItemClickListener 
 
     internal inner class CellClickListenerInMedium(private val i: Int, private val j: Int) :
         View.OnClickListener {
+        @SuppressLint("SetTextI18n")
         override fun onClick(v: View?) {
             if (!gameBoard!!.isGameOver) {
                 val cell = Cell(i, j)
@@ -263,6 +268,7 @@ class MainActivity : AppCompatActivity(), BottomSheetFragment.ItemClickListener 
 
     internal inner class CellClickListenerInHard(private val i: Int, private val j: Int) :
         View.OnClickListener {
+        @SuppressLint("SetTextI18n")
         override fun onClick(v: View?) {
             if (!gameBoard!!.isGameOver) {
                 val cell = Cell(i, j)
@@ -315,6 +321,7 @@ class MainActivity : AppCompatActivity(), BottomSheetFragment.ItemClickListener 
     internal inner class CellClickListenerInEasy(
         private val i: Int, private val j: Int
     ) : View.OnClickListener {
+        @SuppressLint("SetTextI18n")
         override fun onClick(v: View?) {
             if (!gameBoard!!.isGameOver) {
                 val cell = Cell(i, j)

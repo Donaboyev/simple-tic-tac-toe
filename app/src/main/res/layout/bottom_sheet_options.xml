@@ -18,22 +18,22 @@
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/rbEasy"
             style="@style/BottomSheetModeItem"
-            android:text="Easy                " />
+            android:text="@string/easy" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/rbMedium"
             style="@style/BottomSheetModeItem"
-            android:text="Medium    " />
+            android:text="@string/medium" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/rbHard"
             style="@style/BottomSheetModeItem"
-            android:text="Hard                " />
+            android:text="@string/hard" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/rbTwoPlayers"
             style="@style/BottomSheetModeItem"
-            android:text="Two players" />
+            android:text="@string/two_players" />
 
     </RadioGroup>
 
@@ -41,7 +41,7 @@
         android:id="@+id/switchDayNight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Day/Night"
+        android:text="@string/day_night"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rgModes" />

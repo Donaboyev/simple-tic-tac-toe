@@ -1,5 +1,6 @@
 package com.donaboyev.tictactoe
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
@@ -9,6 +10,7 @@ import com.donaboyev.tictactoe.Util.NIGHT_MODE
 import com.donaboyev.tictactoe.Util.SHARED_PREF_MODE
 import com.donaboyev.tictactoe.databinding.ActivitySplashBinding
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     private var background: Thread? = null

@@ -23,7 +23,7 @@
         style="@style/TextPlayerName"
         android:layout_marginStart="16dp"
         android:background="@android:color/transparent"
-        android:text="Player 1"
+        android:text="@string/player_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSettings" />
 
@@ -32,7 +32,7 @@
         style="@style/TextPlayerName"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
-        android:text="Player 2"
+        android:text="@string/player_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSettings" />
 
@@ -41,7 +41,7 @@
         style="@style/TextPlayerName"
         android:background="@drawable/score_back"
         android:padding="6dp"
-        android:text="0 - 0"
+        android:text="@string/_0_0"
         app:layout_constraintEnd_toStartOf="@id/tvPlayer2"
         app:layout_constraintStart_toEndOf="@id/tvPlayer1"
         app:layout_constraintTop_toBottomOf="@id/btnSettings" />

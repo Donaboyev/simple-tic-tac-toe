@@ -84,7 +84,7 @@ class GameBoard {
             if (player == COMPUTER) {
                 placeMove(cell, COMPUTER)
                 val currentScore = minimax(depth + 1, PLAYER)
-                max = Math.max(currentScore, max)
+                max = currentScore.coerceAtLeast(max)
                 if (currentScore >= 0) {
                     if (depth == 0) computersMove = cell
                 }
@@ -98,7 +98,7 @@ class GameBoard {
             } else if (player == PLAYER) {
                 placeMove(cell, PLAYER)
                 val currentScore = minimax(depth + 1, COMPUTER)
-                min = Math.min(currentScore, min)
+                min = currentScore.coerceAtMost(min)
                 if (min == -1) {
                     board[cell.i][cell.j] = ""
                     break
